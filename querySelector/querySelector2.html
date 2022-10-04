@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3></h3>
+        <p id="par-1"></p>
+        <p id="par-2"></p>
+        <p id="par-3"></p>
+        <p id="par-4"></p>
+        <p id="par-5"></p>
+        <p id="par-6"></p>
+
+        <script>
+            const header = document.querySelector("h3");
+            const par1 = document.querySelector("#par-1");
+            const par2 = document.querySelector("#par-2");
+            const par3 = document.querySelector("#par-3");
+            const par4 = document.querySelector("#par-4");
+            const par5 = document.querySelector("#par-5");
+            const par6 = document.querySelector("#par-6");
+
+            header.innerHTML = "Lekcja o <strong>querySelector()</strong> i getElementById()"
+            let str1 = "To jest tekst, który pojawy się w akapicie par-1"
+            let str2 = 'To jest <span style="color: orange;">tekst</span>, który pojawy się w akapicie par-2'
+            let str3 = "1234";//to jest ciąg znaków string
+            let str4 = 1234;//to jest liczba
+            let str5 = "I'm Maciek";
+            let str6 = 'I\'m Maciek';
+
+
+            par1.innerHTML = str1;
+            par2.innerHTML = str2;
+            par3.innerHTML = str5;
+            par4.innerHTML = str6;
+            
+        </script>
+    </body>
+</html>

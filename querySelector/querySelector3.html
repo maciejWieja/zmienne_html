@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript</h1>
+        </header>
+        <h3>Typ String - konkatenacja</h3>
+        <p id="par-1"></p>
+        <p id="par-2"></p>
+        <p id="par-3"></p>
+        <p id="par-4"></p>
+        <p id="par-5"></p>
+        <p id="par-6"></p>
+
+        <script>
+            const header = document.querySelector("h3");
+            const par1 = document.querySelector("#par-1");
+            const par2 = document.querySelector("#par-2");
+            const par3 = document.querySelector("#par-3");
+            const par4 = document.querySelector("#par-4");
+            const par5 = document.querySelector("#par-5");
+            const par6 = document.querySelector("#par-6");
+
+            
+            let firstName = "Jan";//string
+            let lastName = "Kowalski";//string
+            let age = 45;//number
+
+            par1.innerHTML = "Nazywam się Jan kowalski i mam 45 lat";
+            par2.innerHTML = "Nazywam się " + firstName + " " + lastName + " i mam " + age + " lat";
+            par2.innerHTML = "Nazywam się " + firstName + " " + lastName + " i mam " + age + " lat";
+            par4.innerHTML = `Nazywam się ${firstName} ${lastName} i mam ${age} lat`
+            
+        </script>
+    </body>
+</html>
